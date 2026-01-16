@@ -1,7 +1,7 @@
 # Story 0.2: GitHub Actions CI Pipeline
 
 **Epic:** E0 - Project Foundation
-**Status:** in-review
+**Status:** done
 **Estimate:** M (2-4 hours)
 **Requirements:** ADR-001, NFR-701
 **PR:** https://github.com/daveharmswebdev/this-or-that/pull/1
@@ -145,7 +145,7 @@ apps/api/src/__tests__/db.integration.test.ts
 - [x] All 5 CI jobs visible in Actions tab
 - [x] All jobs pass (green checkmarks)
 - [x] CI badge visible in README
-- [ ] Badge shows "passing" status (after merge)
+- [x] Badge shows "passing" status (after merge)
 
 ---
 
@@ -155,7 +155,7 @@ apps/api/src/__tests__/db.integration.test.ts
 - [x] CI workflow file committed
 - [x] All 5 jobs pass on PR
 - [x] Badge shows in README
-- [ ] Feature branch merged to main via PR
+- [x] Feature branch merged to main via PR
 
 ---
 
@@ -173,3 +173,5 @@ apps/api/src/__tests__/db.integration.test.ts
 
 *Implemented: 2026-01-15*
 *PR: https://github.com/daveharmswebdev/this-or-that/pull/1*
+*Merged: 2026-01-16*
+*Reviewed: 2026-01-16 (post-merge review)*

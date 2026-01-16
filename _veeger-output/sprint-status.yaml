@@ -18,16 +18,21 @@ epics:
         completed: "2026-01-15"
       - id: "0.2"
         name: GitHub Actions CI Pipeline
-        status: in-review
+        status: done
         estimate: M
         tasks: 5
         subtasks: 22
         started: "2026-01-15"
+        completed: "2026-01-16"
         pr: "https://github.com/daveharmswebdev/this-or-that/pull/1"
       - id: "0.3"
         name: Pre-commit Hooks
-        status: backlog
+        status: in-review
         estimate: S
+        tasks: 5
+        subtasks: 20
+        started: "2026-01-16"
+        pr: "https://github.com/daveharmswebdev/this-or-that/pull/3"
       - id: "0.4"
         name: Local Development Environment
         status: backlog
@@ -242,3 +247,27 @@ activity:
     from: in-progress
     to: in-review
     notes: "All 5 tasks complete. All CI jobs pass. PR #1 created: https://github.com/daveharmswebdev/this-or-that/pull/1"
+  - date: "2026-01-16"
+    time: "06:00"
+    story: "0.2"
+    from: in-review
+    to: done
+    notes: "PR #1 merged. Post-merge code review approved."
+  - date: "2026-01-16"
+    time: "06:15"
+    story: "0.3"
+    from: backlog
+    to: ready
+    notes: "Story 0.3 refined with 5 tasks and 20 subtasks. Branch: feature/0.3-pre-commit-hooks"
+  - date: "2026-01-16"
+    time: "07:00"
+    story: "0.3"
+    from: ready
+    to: in-progress
+    notes: "Implementation started - TDD approach"
+  - date: "2026-01-16"
+    time: "08:00"
+    story: "0.3"
+    from: in-progress
+    to: in-review
+    notes: "All 5 tasks complete. Pre-commit hooks working. PR #3 created: https://github.com/daveharmswebdev/this-or-that/pull/3"
