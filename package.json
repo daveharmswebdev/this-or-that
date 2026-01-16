@@ -5,6 +5,7 @@
   "description": "Movie ranking game using Swiss tournament format",
   "workspaces": ["apps/*"],
   "scripts": {
+    "prepare": "husky",
     "dev": "bun run --cwd apps/api dev & bun run --cwd apps/web dev",
     "build": "bun run --cwd apps/api build && bun run --cwd apps/web build",
     "lint": "biome check .",
@@ -17,6 +18,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
     "typescript": "^5.7.2",
     "vitest": "^4.0.17"
   },
