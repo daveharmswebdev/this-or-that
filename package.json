@@ -1,0 +1,22 @@
+{
+  "name": "versus",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Movie ranking game using Swiss tournament format",
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "dev": "bun run --filter '*' dev",
+    "build": "bun run --filter '*' build",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit -p apps/api && tsc --noEmit -p apps/web"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
