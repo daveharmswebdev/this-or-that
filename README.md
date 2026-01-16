@@ -1,5 +1,7 @@
 # Versus
 
+[![CI](https://github.com/daveharmswebdev/this-or-that/actions/workflows/ci.yml/badge.svg)](https://github.com/daveharmswebdev/this-or-that/actions/workflows/ci.yml)
+
 A movie ranking game that uses Swiss tournament format to determine your order of preference through pairwise comparisons.
 
 ## Overview
@@ -60,6 +62,9 @@ bun run --filter @versus/web dev   # Web on http://localhost:5173
 | `bun run lint:fix` | Fix linting issues |
 | `bun run format` | Format code with Biome |
 | `bun run typecheck` | Run TypeScript type checking |
+| `bun run test` | Run tests in watch mode |
+| `bun run test:unit` | Run unit tests |
+| `bun run test:integration` | Run integration tests |
 
 ## Project Structure
 
