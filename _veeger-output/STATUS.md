@@ -13,11 +13,11 @@
 |--------|-------|
 | Total Epics | 8 |
 | Total Stories | 35 |
-| Completed | 1 |
-| In Review | 1 |
+| Completed | 2 |
+| In Review | 0 |
 | In Progress | 0 |
-| Ready | 0 |
-| Backlog | 33 |
+| Ready | 1 |
+| Backlog | 32 |
 
 ---
 
@@ -25,7 +25,7 @@
 
 | Epic | Name | Stories | Ready | Done | Status |
 |------|------|---------|-------|------|--------|
-| E0 | Project Foundation | 6 | 0 | 1 | In Progress |
+| E0 | Project Foundation | 6 | 1 | 2 | In Progress |
 | E1 | Backend API & Data | 5 | 0 | 0 | Backlog |
 | E2 | Swiss Tournament Engine | 4 | 0 | 0 | Backlog |
 | E3 | Genre Selection | 3 | 0 | 0 | Backlog |
@@ -38,11 +38,15 @@
 
 ## Current Focus
 
-**In Review:** Story 0.2 - GitHub Actions CI Pipeline
+**Recently Completed:** Story 0.2 - GitHub Actions CI Pipeline (merged)
 
-PR #1: https://github.com/daveharmswebdev/this-or-that/pull/1
+**Ready for Implementation:**
+- 0.3 Pre-commit Hooks (S) - READY
 
-All 5 CI jobs passing. Ready for merge.
+**Next Candidates:**
+- 0.4 Local Development Environment (S)
+- 0.5 Database Schema and Migrations (M)
+- 0.6 Vitest Configuration and First Tests (M)
 
 ---
 
@@ -50,8 +54,8 @@ All 5 CI jobs passing. Ready for merge.
 
 ### E0: Project Foundation
 - [x] 0.1 Repository and Monorepo Setup (S) - **DONE**
-- [ ] 0.2 GitHub Actions CI Pipeline (M) - **IN REVIEW** (PR #1)
-- [ ] 0.3 Pre-commit Hooks (S)
+- [x] 0.2 GitHub Actions CI Pipeline (M) - **DONE**
+- [ ] 0.3 Pre-commit Hooks (S) - **READY**
 - [ ] 0.4 Local Development Environment (S)
 - [ ] 0.5 Database Schema and Migrations (M)
 - [ ] 0.6 Vitest Configuration and First Tests (M)
@@ -105,6 +109,8 @@ All 5 CI jobs passing. Ready for merge.
 
 | Date | Story | Change | Notes |
 |------|-------|--------|-------|
+| 2026-01-16 | 0.3 | backlog -> ready | Story refined with 5 tasks, 20 subtasks. Branch: feature/0.3-pre-commit-hooks |
+| 2026-01-16 | 0.2 | in-review -> done | PR #1 merged. Post-merge code review approved |
 | 2026-01-15 | 0.2 | in-progress -> in-review | All 5 tasks complete. All CI jobs pass. PR #1 created |
 | 2026-01-15 | 0.2 | ready -> in-progress | Implementation started - TDD approach |
 | 2026-01-15 | 0.2 | backlog -> ready | Story refined with 5 tasks. Branch: feature/0.2-ci-pipeline |
@@ -120,6 +126,7 @@ All 5 CI jobs passing. Ready for merge.
 
 | Story | Tasks | Subtasks | Completed |
 |-------|-------|----------|-----------|
+| 0.2 | 5 | 22 | 2026-01-16 |
 | 0.1 | 8 | 42 | 2026-01-15 |
 
 ---
@@ -128,13 +135,14 @@ All 5 CI jobs passing. Ready for merge.
 
 | PR | Story | Title | Status |
 |----|-------|-------|--------|
-| [#1](https://github.com/daveharmswebdev/this-or-that/pull/1) | 0.2 | feat(ci): add GitHub Actions CI pipeline | All checks passing |
+| *None* | - | - | - |
 
 ---
 
 ## Implementation Artifacts
 
-- [0.2 - GitHub Actions CI Pipeline](implementation/0-2-github-actions-ci-pipeline.md) - **IN REVIEW**
+- [0.3 - Pre-commit Hooks](implementation/0-3-pre-commit-hooks.md) - **READY**
+- [0.2 - GitHub Actions CI Pipeline](implementation/0-2-github-actions-ci-pipeline.md) - **DONE**
 
 ---
 
@@ -147,4 +155,4 @@ All 5 CI jobs passing. Ready for merge.
 
 ---
 
-*Last updated: 2026-01-15*
+*Last updated: 2026-01-16*
