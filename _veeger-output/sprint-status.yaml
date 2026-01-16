@@ -1,0 +1,244 @@
+project: versus
+sprint: 1
+started: 2026-01-15
+status: planning-complete
+
+epics:
+  - id: E0
+    name: Project Foundation
+    status: in-progress
+    stories:
+      - id: "0.1"
+        name: Repository and Monorepo Setup
+        status: done
+        estimate: S
+        tasks: 8
+        subtasks: 42
+        started: "2026-01-15"
+        completed: "2026-01-15"
+      - id: "0.2"
+        name: GitHub Actions CI Pipeline
+        status: in-review
+        estimate: M
+        tasks: 5
+        subtasks: 22
+        started: "2026-01-15"
+        pr: "https://github.com/daveharmswebdev/this-or-that/pull/1"
+      - id: "0.3"
+        name: Pre-commit Hooks
+        status: backlog
+        estimate: S
+      - id: "0.4"
+        name: Local Development Environment
+        status: backlog
+        estimate: S
+      - id: "0.5"
+        name: Database Schema and Migrations
+        status: backlog
+        estimate: M
+      - id: "0.6"
+        name: Vitest Configuration and First Tests
+        status: backlog
+        estimate: M
+
+  - id: E1
+    name: Backend API & Data
+    status: backlog
+    stories:
+      - id: "1.1"
+        name: Hono API Scaffolding
+        status: backlog
+        estimate: S
+      - id: "1.2"
+        name: OMDB Client Service
+        status: backlog
+        estimate: M
+      - id: "1.3"
+        name: Movie Seed Script
+        status: backlog
+        estimate: M
+      - id: "1.4"
+        name: Genres API Endpoint
+        status: backlog
+        estimate: S
+      - id: "1.5"
+        name: Game Start API Endpoint
+        status: backlog
+        estimate: S
+
+  - id: E2
+    name: Swiss Tournament Engine
+    status: backlog
+    stories:
+      - id: "2.1"
+        name: Tournament State Management
+        status: backlog
+        estimate: S
+      - id: "2.2"
+        name: Swiss Pairing Algorithm
+        status: backlog
+        estimate: M
+      - id: "2.3"
+        name: Tiebreaker Calculations
+        status: backlog
+        estimate: M
+      - id: "2.4"
+        name: Tournament Progression
+        status: backlog
+        estimate: M
+
+  - id: E3
+    name: Genre Selection
+    status: backlog
+    stories:
+      - id: "3.1"
+        name: Genre Selection Page
+        status: backlog
+        estimate: M
+      - id: "3.2"
+        name: Genre Card Interactions
+        status: backlog
+        estimate: S
+      - id: "3.3"
+        name: Genre Data Fetching
+        status: backlog
+        estimate: S
+
+  - id: E4
+    name: Game Interaction
+    status: backlog
+    stories:
+      - id: "4.1"
+        name: Game Screen Layout
+        status: backlog
+        estimate: M
+      - id: "4.2"
+        name: Click/Tap Selection
+        status: backlog
+        estimate: S
+      - id: "4.3"
+        name: Swipe Gestures (Mobile)
+        status: backlog
+        estimate: L
+      - id: "4.4"
+        name: Progress Indicator
+        status: backlog
+        estimate: S
+      - id: "4.5"
+        name: Comparison Transitions
+        status: backlog
+        estimate: M
+
+  - id: E5
+    name: Results & Commentary
+    status: backlog
+    stories:
+      - id: "5.1"
+        name: Results Screen Layout
+        status: backlog
+        estimate: M
+      - id: "5.2"
+        name: Commentary Generation
+        status: backlog
+        estimate: M
+      - id: "5.3"
+        name: Play Again Flow
+        status: backlog
+        estimate: S
+      - id: "5.4"
+        name: Game Timer (Optional)
+        status: backlog
+        estimate: S
+        priority: could
+
+  - id: E6
+    name: Session Persistence
+    status: backlog
+    stories:
+      - id: "6.1"
+        name: Zustand Store Setup
+        status: backlog
+        estimate: M
+      - id: "6.2"
+        name: localStorage Persistence
+        status: backlog
+        estimate: S
+      - id: "6.3"
+        name: Resume Game Prompt
+        status: backlog
+        estimate: M
+      - id: "6.4"
+        name: Session Movie Tracking
+        status: backlog
+        estimate: M
+
+  - id: E7
+    name: Polish & Accessibility
+    status: backlog
+    stories:
+      - id: "7.1"
+        name: Keyboard Navigation
+        status: backlog
+        estimate: M
+      - id: "7.2"
+        name: Screen Reader Support
+        status: backlog
+        estimate: M
+      - id: "7.3"
+        name: Reduced Motion Support
+        status: backlog
+        estimate: S
+      - id: "7.4"
+        name: Error States and Edge Cases
+        status: backlog
+        estimate: M
+
+activity:
+  - date: "2026-01-15"
+    time: "now"
+    story: "all"
+    from: null
+    to: backlog
+    notes: "Sprint initialized with 35 stories across 8 epics. PRD, Requirements, and Architecture complete."
+  - date: "2026-01-15"
+    time: "now"
+    story: "0.1"
+    from: backlog
+    to: ready
+    notes: "Story 0.1 refined with 8 tasks and 42 subtasks"
+  - date: "2026-01-15"
+    time: "20:00"
+    story: "0.1"
+    from: ready
+    to: in-progress
+    notes: "Implementation started"
+  - date: "2026-01-15"
+    time: "20:30"
+    story: "0.1"
+    from: in-progress
+    to: done
+    notes: "All 8 tasks complete. bun install, lint, typecheck all pass. Committed to main."
+  - date: "2026-01-15"
+    time: "21:00"
+    story: "0.2"
+    from: backlog
+    to: backlog
+    notes: "Branch protection enabled on main (requires PRs, no approval needed for solo dev). Prep for CI story."
+  - date: "2026-01-15"
+    time: "21:30"
+    story: "0.2"
+    from: backlog
+    to: ready
+    notes: "Story 0.2 refined with 5 tasks and 22 subtasks. Feature branch created: feature/0.2-ci-pipeline"
+  - date: "2026-01-15"
+    time: "22:00"
+    story: "0.2"
+    from: ready
+    to: in-progress
+    notes: "Implementation started - TDD approach"
+  - date: "2026-01-15"
+    time: "22:55"
+    story: "0.2"
+    from: in-progress
+    to: in-review
+    notes: "All 5 tasks complete. All CI jobs pass. PR #1 created: https://github.com/daveharmswebdev/this-or-that/pull/1"
