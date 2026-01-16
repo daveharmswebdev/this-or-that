@@ -27,10 +27,12 @@ epics:
         pr: "https://github.com/daveharmswebdev/this-or-that/pull/1"
       - id: "0.3"
         name: Pre-commit Hooks
-        status: ready
+        status: in-review
         estimate: S
         tasks: 5
         subtasks: 20
+        started: "2026-01-16"
+        pr: "https://github.com/daveharmswebdev/this-or-that/pull/3"
       - id: "0.4"
         name: Local Development Environment
         status: backlog
@@ -257,3 +259,15 @@ activity:
     from: backlog
     to: ready
     notes: "Story 0.3 refined with 5 tasks and 20 subtasks. Branch: feature/0.3-pre-commit-hooks"
+  - date: "2026-01-16"
+    time: "07:00"
+    story: "0.3"
+    from: ready
+    to: in-progress
+    notes: "Implementation started - TDD approach"
+  - date: "2026-01-16"
+    time: "08:00"
+    story: "0.3"
+    from: in-progress
+    to: in-review
+    notes: "All 5 tasks complete. Pre-commit hooks working. PR #3 created: https://github.com/daveharmswebdev/this-or-that/pull/3"
