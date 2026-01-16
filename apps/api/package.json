@@ -9,10 +9,12 @@
     "start": "bun run dist/index.js"
   },
   "dependencies": {
-    "hono": "^4.6.14"
+    "hono": "^4.6.14",
+    "pg": "^8.17.1"
   },
   "devDependencies": {
     "@types/bun": "^1.1.14",
+    "@types/pg": "^8.16.0",
     "typescript": "^5.7.2"
   }
 }
